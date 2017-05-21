@@ -27,8 +27,8 @@
 			<div class="container clearfix">
 				<h1>Страница не найдена</h1>
 				<ol class="breadcrumb">
-					<li><a href="index.php">Home</a></li>
-					<li><a href="#">Pages</a></li>
+					<li><a href="index.php">Главная</a></li>
+					<!--<li><a href="#">Pages</a></li>-->
 					<li class="active">404</li>
 				</ol>
 			</div>
@@ -51,7 +51,7 @@
 
 						<div class="heading-block nobottomborder">
 							<h4>Страница, которую Вы искали, не найдена.</h4>
-							<span>Уточните поиск или перейдите по ссылкам ниже:</span>
+							<!--<span>Уточните поиск или перейдите по ссылкам ниже:</span>-->
 						</div>
 
 						<form action="search.php" method="get" role="form" class="nobottommargin">
@@ -63,7 +63,7 @@
 							</div>
 						</form>
 
-						<div class="col_one_third widget_links topmargin nobottommargin">
+						<!--<div class="col_one_third widget_links topmargin nobottommargin">
 							<ul>
 								<li><a href="#">Home</a></li>
 								<li><a href="#">About</a></li>
@@ -85,7 +85,7 @@
 								<li><a href="#">Forums</a></li>
 								<li><a href="#">Contact</a></li>
 							</ul>
-						</div>
+						</div>-->
 
 					</div>
 

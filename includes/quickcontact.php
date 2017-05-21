@@ -1,16 +1,17 @@
 <?php
 
-require_once('phpmailer/PHPMailerAutoload.php');
+require_once('phpmailer/PHPMailerAutoload.php'); 
 
 $toemails = array();
 
 $toemails[] = array(
-				'email' => 'h2opolo@yandex.ru', // Your Email Address
-				'name'  => 'Your Name' // Your Name
+				'email' => 'info@cok-niime.ru', // Your Email Address
+				'name'  => 'COK NIIME' // Your Name
 			);
 
 // Form Processing Messages
-$message_success = 'We have <strong>successfully</strong> received your Message and will get Back to you as soon as possible.';
+//$message_success = 'We have <strong>successfully</strong> received your Message and will get Back to you as soon as possible.';
+$message_success = 'Cообщение <strong>успешно</strong> доставлено, в ближайшее время мы с Вами свяжемся.';
 
 // Add this only if you use reCaptcha with your Contact Forms
 $recaptcha_secret = ''; // Your reCaptcha Secret
@@ -19,6 +20,13 @@ $mail = new PHPMailer();
 
 // If you intend you use SMTP, add your SMTP Code after this Line
 
+// $mail->IsSMTP();
+// $mail->Host = "mail.nic.ru";
+// $mail->SMTPDebug = 0;
+// $mail->SMTPAuth = true;
+// $mail->Port = 587;
+// $mail->Username = "info@cok-niime.nichost.ru"; //nichost.
+// $mail->Password = "23eZU2dP2Rwyk";
 
 if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
 	if( $_POST['quick-contact-form-email'] != '' ) {
@@ -27,7 +35,7 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
 		$email = $_POST['quick-contact-form-email'];
 		$message = $_POST['quick-contact-form-message'];
 
-		$subject = 'New Message From Quick Contact Form';
+		$subject = 'WWW.COK-NIIME.RU message from Quik Contact Form';
 
 		$botcheck = $_POST['quick-contact-form-botcheck'];
 

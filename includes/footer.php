@@ -4,7 +4,7 @@
 
 	<div class="container">
 
-		<!-- Footer Widgets
+		<!-- Footer Widgets 
 		============================================= -->
 		<div class="footer-widgets-wrap clearfix">
 
@@ -12,19 +12,17 @@
 
 				<div class="widget clearfix">
 
-					<img src="images/footer-widget-logo.png" alt="" class="footer-logo">
+					<img src="./images/footer-widget-logo.png" alt="" class="footer-logo">
 
-<!--					<p>Наша миссия - содействовать реализации государственной политики по вхождению <strong>России</strong> в число <strong>мировых лидеров</strong> в области <strong>наноиндустрии</strong>.</p>-->
-
-					<div style="background: url('images/world-map.png') no-repeat center center; background-size: 100%;">
+					<div style="background: url('./images/world-map.png') no-repeat center center; background-size: 100%;">
 						<address>
 							<strong>Адресс:</strong><br>
 							124460, Россия, Москва, Зеленоград,<br>
 							1-ый Западный проезд, д. 12/1<br>
 						</address>
-						<abbr title="Phone Number"><strong>Телефон:</strong></abbr>+7 495 229 72 99<br>
+						<abbr title="Phone Number"><strong>Телефон:</strong></abbr>+7 495 229 70 64<br>
 						<!--<abbr title="Fax"><strong>Fax:</strong></abbr>+7 495 229 72 99<br>-->
-						<abbr title="Email Address"><strong>Email:</strong></abbr> info@cokniime.ru<br>
+						<abbr title="Email Address"><strong>Email:</strong></abbr> info@cok-niime.ru<br>
 					</div>
 
 				</div>
@@ -38,11 +36,11 @@
 					<h4>Отзывы клиентов</h4>
 
 					<div class="fslider testimonial no-image nobg noborder noshadow nopadding"  data-animation="slide" data-arrows="false" data-autoplay="10000">
-						<div class="flexslider">
+						<!--<div class="flexslider">
 							<div class="slider-wrap">
 								<div class="slide">
 									<div class="testi-image">
-										<a href="#"><img src="images/testimonials/3.jpg" alt="Customer Testimonails"></a>
+										<a href="#"><img src="./images/testimonials/3.jpg" alt="Customer Testimonails"></a>
 									</div>
 									<div class="testi-content">
 										<p>В эру передовых технологий неэффективность - страшный грех перед Господом!</p>
@@ -54,7 +52,7 @@
 									</div>
 									<div class="slide">
 										<div class="testi-image">
-											<a href="#"><img src="images/testimonials/2.jpg" alt="Customer Testimonails"></a>
+											<a href="#"><img src="./images/testimonials/2.jpg" alt="Customer Testimonails"></a>
 										</div>
 										<div class="testi-content">
 											<p>Мы не знаем, что такое дизайн, но мы будем делать это в любом случае.</p>
@@ -66,7 +64,7 @@
 									</div>
 									<div class="slide">
 										<div class="testi-image">
-											<a href="#"><img src="images/testimonials/1.jpg" alt="Customer Testimonails"></a>
+											<a href="#"><img src="./images/testimonials/1.jpg" alt="Customer Testimonails"></a>
 										</div>
 										<div class="testi-content">
 											<p>Не имеет смысла нанимать толковых людей, а затем указывать, что им делать. Мы нанимаем толковых людей, чтобы они говорили, что делать нам.</p>
@@ -77,12 +75,12 @@
 										</div>
 									</div>
 								</div>
-							</div>
+							</div>-->
 						</div>
 
 					</div>
 
-					<div class="widget clearfix">
+					<!--<div class="widget clearfix">
 
 						<a href="#" class="social-icon si-small si-rounded si-facebook">
 							<i class="icon-facebook"></i>
@@ -119,7 +117,7 @@
 							<i class="icon-linkedin"></i>
 						</a>
 
-					</div>
+					</div>-->
 
 				</div>
 
@@ -131,7 +129,7 @@
 
 						<div class="quick-contact-form-result"></div>
 
-						<form id="quick-contact-form" name="quick-contact-form" action="includes/quickcontact.php" method="post" class="quick-contact-form nobottommargin">
+						<form id="quick-contact-form" name="quick-contact-form" action="./includes/quickcontact.php" method="post" class="quick-contact-form nobottommargin">
 
 							<div class="form-process"></div>
 
@@ -170,11 +168,11 @@
 			<div class="col_half col_last tright">
 				<div class="fright clearfix">
 					<div class="copyrights-menu copyright-links nobottommargin">
-						<a href="index.php">Главная</a>/
-						<a href="#">Услуги</a>/
-						<a href="projects.php">Проекты</a>/
-						<a href="#">FAQs</a>/
-						<a href="contacts.php">Контакты</a>
+						<a href="./index.php">Главная</a>/
+						<!-- <a href="#">Услуги</a>/ -->
+						<!-- <a href="./projects.php">Проекты</a>/ -->
+						<!-- <a href="#">FAQs</a>/ -->
+						<a href="./contacts.php">Контакты</a>
 					</div>
 				</div>
 			</div>

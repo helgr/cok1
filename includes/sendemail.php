@@ -5,12 +5,13 @@ require_once('phpmailer/PHPMailerAutoload.php');
 $toemails = array();
 
 $toemails[] = array(
-				'email' => 'username@website.com', // Your Email Address
-				'name' => 'Your Name' // Your Name
+				'email' => 'info@cok-niime.ru', // Your Email Address
+				'name' => 'COK NIME' // Your Name
 			);
 
 // Form Processing Messages
-$message_success = 'Сообщение <strong>успешно</strong> отправлено. В ближайшее время мы свяжемся с Вами.';
+//$message_success = 'We have <strong>successfully</strong> received your Message and will get Back to you as soon as possible.';
+$message_success = 'Сообщение <strong>успешно</strong> доставлено. В ближайшее время мы свяжемся с Вами.';
 
 // Add this only if you use reCaptcha with your Contact Forms
 $recaptcha_secret = ''; // Your reCaptcha Secret
@@ -19,6 +20,14 @@ $mail = new PHPMailer();
 
 // If you intend you use SMTP, add your SMTP Code after this Line
 
+// $mail->IsSMTP();
+// $mail->Host = "mail.nic.ru";
+// $mail->SMTPDebug = 0;
+// $mail->SMTPAuth = true;
+// $mail->Port = 587;
+// $mail->Username = "info@cok-niime.nichost.ru"; //nichost.
+// $mail->Password = "23eZU2dP2Rwyk";
+
 
 if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
 	if( $_POST['template-contactform-email'] != '' ) {
@@ -26,11 +35,12 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
 		$name = isset( $_POST['template-contactform-name'] ) ? $_POST['template-contactform-name'] : '';
 		$email = isset( $_POST['template-contactform-email'] ) ? $_POST['template-contactform-email'] : '';
 		$phone = isset( $_POST['template-contactform-phone'] ) ? $_POST['template-contactform-phone'] : '';
-		$service = isset( $_POST['template-contactform-service'] ) ? $_POST['template-contactform-service'] : '';
+		//$service = isset( $_POST['template-contactform-service'] ) ? $_POST['template-contactform-service'] : '';
 		$subject = isset( $_POST['template-contactform-subject'] ) ? $_POST['template-contactform-subject'] : '';
 		$message = isset( $_POST['template-contactform-message'] ) ? $_POST['template-contactform-message'] : '';
 
-		$subject = isset($subject) ? $subject : 'New Message From Contact Form';
+		$subject = isset($subject) ? $subject : 'WWW.COK-NIIME.RU New message from Contact Form';
+		//$subject = 'WWW.COK-NIIME.RU:'.' '.$subject;
 
 		$botcheck = $_POST['template-contactform-botcheck'];
 
@@ -47,7 +57,7 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
 			$email = isset($email) ? "Email: $email<br><br>" : '';
 			$phone = isset($phone) ? "Phone: $phone<br><br>" : '';
 			$service = isset($service) ? "Service: $service<br><br>" : '';
-			$message = isset($message) ? "Message: $message<br><br>" : '';
+			$message = isset($message) ? "Message: <br><br>$message<br><br>" : '';
 
 			$referrer = $_SERVER['HTTP_REFERER'] ? '<br><br><br>This Form was submitted from: ' . $_SERVER['HTTP_REFERER'] : '';
 

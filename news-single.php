@@ -44,7 +44,6 @@
 
 			<div class="content-wrap">
 
-
 				<div class="container center clearfix">
 
 					<div class="heading-block center">
@@ -77,6 +76,8 @@
 	============================================= -->
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/plugins.js"></script>
+
+	<script src="js/menu-hilight.js"></script>
 
 	<!-- Footer Scripts
 	============================================= -->
